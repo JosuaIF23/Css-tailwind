@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D.CO</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?
+family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="font-sans bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen"
+  >
+    <nav class="bg-gray-900 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Del Corner</h1>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-emerald-100">Tentang</a></li>
+          <li><a href="#menu" class="hover:text-emerald-100">Menu</a></li>
+          <li><a href="#contact" class="hover:text-emerald-100">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section
+      class="relative bg-cover bg-center h-[80vh]"
+      style="background-image: url('/assets/cafe-bg.jpg')"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center text-white"
+      >
+        <h1
+          class="text-5xl font-extrabold bg-gradient-to-r from-emerald-400 to-purple-600 bg-clip-text text-transparent animate-pulse"
+        >
+          Selamat Datang di D.co
+        </h1>
+
+        <p class="text-lg mb-6">
+          Tempat nyaman untuk mahasiswa DEL belajar & bersantai
+        </p>
+        <a
+          href="#menu"
+          class="px-6 py-3 bg-brand hover:bg-brand-dark text-white rounded-lg shadow-lg transition"
+        >
+          Lihat Menu
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="py-16 container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-6">Tentang Kami</h3>
+
+      <div class="flex justify-center mb-6">
+        <img
+          src="/assets/Logo.png"
+          alt="Logo Del Corner"
+          class="w-40 h-40 object-contain"
+        />
+      </div>
+      <p class="text-center max-w-2xl mx-auto text-gray-700">
+        D.co (Del Corner) adalah cafe sederhana yang dirancang khusus untuk
+        mahasiswa Institut Teknologi DEL. Tempat yang nyaman untuk diskusi,
+        belajar kelompok, atau sekadar menikmati kopi sebelum kelas.
+      </p>
+    </section>
+
+    <div
+      class="backdrop-blur-md bg-white/30 border border-white/20 p-6 rounded-xl shadow-lg"
+    ></div>
+
+    <!-- Menu Section -->
+    <section id="menu" class="bg-gray-100 py-16">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-10">Menu Favorit</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-lg shadow p-6 text-center hover:shadow-2xl hover:scale-105 hover:bg-emerald-50 transition transform duration-300 ease-in-out"
+          >
+            <div
+              class="backdrop-blur-md bg-white/30 border border-white/20 p-6 rounded-xl shadow-lg"
+            >
+              <h4 class="font-bold text-xl mb-2">Americano</h4>
+              <p class="text-gray-600">
+                Racikan kopi spesial untuk energi sebelum kuliah.
+              </p>
+              <p class="mt-3 font-bold">Rp 15.000</p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow p-6 text-center hover:shadow-2xl hover:scale-105 hover:bg-emerald-50 transition transform duration-300 ease-in-out"
+          >
+            <div
+              class="backdrop-blur-md bg-white/30 border border-white/20 p-6 rounded-xl shadow-lg"
+            >
+              <h4 class="font-bold text-xl mb-2">
+                Chicken Katsu Japaneese Curry
+              </h4>
+              <p class="text-gray-600">
+                Menu kenyang hemat untuk kantong mahasiswa.
+              </p>
+              <p class="mt-3 font-bold">Rp 27.000</p>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow p-6 text-center hover:shadow-2xl hover:scale-105 hover:bg-emerald-50 transition transform duration-300 ease-in-out"
+          >
+            <div
+              class="backdrop-blur-md bg-white/30 border border-white/20 p-6 rounded-xl shadow-lg"
+            >
+              <h4 class="font-bold text-xl mb-2">Matcha Greentea</h4>
+              <p class="text-gray-600">
+                Minuman segar untuk menemani diskusi santai.
+              </p>
+              <p class="mt-3 font-bold">Rp 18.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="bg-gray-100 py-16">
+      <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-10">Daftar Menu</h3>
+
+        <!-- Accordion -->
+        <div class="w-full max-w-3xl mx-auto space-y-4">
+          <!-- Nasi Goreng -->
+          <details class="border rounded">
+            <summary
+              class="cursor-pointer px-4 py-2 bg-emerald-600 text-white font-semibold"
+            >
+              Nasi Goreng
+            </summary>
+            <div class="px-4 py-2 bg-white">
+              <ul class="list-disc list-inside">
+                <li>Nasi Goreng Telur - 18K</li>
+                <li>Nasi Goreng Pattaya - 23K</li>
+                <li>Nasi Goreng Seafood - 25K</li>
+                <li>Nasi Goreng Spesial - 25K</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Mie / Capcay -->
+          <details class="border rounded">
+            <summary
+              class="cursor-pointer px-4 py-2 bg-emerald-600 text-white font-semibold"
+            >
+              Mie / Capcay
+            </summary>
+            <div class="px-4 py-2 bg-white">
+              <ul class="list-disc list-inside">
+                <li>Mie/Bihun/Kwetiau/Ifumie Goreng Telur - 18K</li>
+                <li>Mie/Bihun/Kwetiau/Ifumie Goreng Seafood - 25K</li>
+                <li>Mie/Bihun/Kwetiau/Ifumie Goreng Spesial - 25K</li>
+                <li>Capcay Goreng Ayam/Seafood - 20K/23K</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Ikan Goreng -->
+          <details class="border rounded">
+            <summary
+              class="cursor-pointer px-4 py-2 bg-emerald-600 text-white font-semibold"
+            >
+              Ikan Goreng
+            </summary>
+            <div class="px-4 py-2 bg-white">
+              <ul class="list-disc list-inside">
+                <li>Nasi Ikan Nila Saos Singapur - 25K</li>
+                <li>Nasi Ikan Nila Saos Padang - 25K</li>
+                <li>Nasi Ikan Nila Asam-Manis - 25K</li>
+                <li>Nasi Ikan Nila Rica-Rica - 25K</li>
+                <li>Nasi Ikan Nila Sambal Terasi - 25K</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Ayam -->
+          <details class="border rounded">
+            <summary
+              class="cursor-pointer px-4 py-2 bg-emerald-600 text-white font-semibold"
+            >
+              Ayam
+            </summary>
+            <div class="px-4 py-2 bg-white">
+              <ul class="list-disc list-inside">
+                <li>Nasi Ayam Penyet - 25K</li>
+                <li>Nasi Ayam Geprek - 25K</li>
+                <li>Ayam Goreng Keju - 27K</li>
+                <li>Chicken Steak Black Pepper - 27K</li>
+                <li>Chicken Katsu Japanese Curry - 27K</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Pasta -->
+          <details class="border rounded">
+            <summary
+              class="cursor-pointer px-4 py-2 bg-emerald-600 text-white font-semibold"
+            >
+              Pasta
+            </summary>
+            <div class="px-4 py-2 bg-white">
+              <ul class="list-disc list-inside">
+                <li>Spaghetti Chicken Carbonara - 25K</li>
+                <li>Fettuccini Chicken Carbonara - 25K</li>
+                <li>Spaghetti Aglio Olio (Ayam/Seafood) - 25K</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Snack -->
+          <details class="border rounded">
+            <summary
+              class="cursor-pointer px-4 py-2 bg-emerald-600 text-white font-semibold"
+            >
+              Snack
+            </summary>
+            <div class="px-4 py-2 bg-white">
+              <ul class="list-disc list-inside">
+                <li>Fried Cassava - 15K</li>
+                <li>Nugget - 17K</li>
+                <li>French Fries - 17K</li>
+                <li>Pisang Crispy Coklat Keju - 20K</li>
+                <li>Roti Ayam Keju - 20K</li>
+                <li>Dimsum (3 pcs) - 18K</li>
+                <li>Snack Pastry Puff (4 pcs) - 20K</li>
+                <li>Snack Platter - 23K</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Coffee -->
+          <details class="border rounded">
+            <summary
+              class="cursor-pointer px-4 py-2 bg-amber-700 text-white font-semibold"
+            >
+              Coffee
+            </summary>
+            <div class="px-4 py-2 bg-white">
+              <ul class="list-disc list-inside">
+                <li>Espresso - 10K/12K</li>
+                <li>Americano - 13K/15K</li>
+                <li>Aren Coffee - 15K/17K</li>
+                <li>Cappuccino - 18K/20K</li>
+                <li>Hazelnut Coffee - 18K/20K</li>
+                <li>Mocha - 20K/22K</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Non Coffee -->
+          <details class="border rounded">
+            <summary
+              class="cursor-pointer px-4 py-2 bg-amber-700 text-white font-semibold"
+            >
+              Non Coffee
+            </summary>
+            <div class="px-4 py-2 bg-white">
+              <ul class="list-disc list-inside">
+                <li>Taro Latte - 18K/20K</li>
+                <li>Red Velvet Latte - 18K/20K</li>
+                <li>Chocolate Latte - 18K/20K</li>
+                <li>Matcha Greentea - 20K/22K</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Mocktail -->
+          <details class="border rounded">
+            <summary
+              class="cursor-pointer px-4 py-2 bg-amber-700 text-white font-semibold"
+            >
+              Mocktail
+            </summary>
+            <div class="px-4 py-2 bg-white">
+              <ul class="list-disc list-inside">
+                <li>Blue Citrus Mojito - 17K</li>
+                <li>Orange Mojito - 17K</li>
+                <li>Strawberry Mojito - 17K</li>
+                <li>Virgin Mojito - 17K</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Yakult Series -->
+          <details class="border rounded">
+            <summary
+              class="cursor-pointer px-4 py-2 bg-amber-700 text-white font-semibold"
+            >
+              Yakult Series
+            </summary>
+            <div class="px-4 py-2 bg-white">
+              <ul class="list-disc list-inside">
+                <li>Strawberry Yakult - 17K</li>
+                <li>Lychee Yakult - 17K</li>
+                <li>Melon Yakult - 17K</li>
+                <li>Coco Pandan Yakult - 17K</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Teh -->
+          <details class="border rounded">
+            <summary
+              class="cursor-pointer px-4 py-2 bg-amber-700 text-white font-semibold"
+            >
+              Teh
+            </summary>
+            <div class="px-4 py-2 bg-white">
+              <ul class="list-disc list-inside">
+                <li>Teh Tong - 5K/7K</li>
+                <li>Teh Manis - 7K/9K</li>
+                <li>Lemon Tea - 13K/15K</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="max-w-lg mx-auto bg-white rounded-2xl shadow-xl p-8 mb-8 border border-gray-200 hover:shadow-2xl hover:scale-105 transition-transform duration-300"
+    >
+      <h3 class="text-3xl font-bold text-center mb-6">Kontak</h3>
+      <p class="text-center text-gray-700 mb-4">
+        Untuk pemesanan atau reservasi, silakan hubungi:
+      </p>
+
+      <!-- Kontak Info -->
+      <div class="text-center mb-8">
+        <p><strong>Nama:</strong> Sry Denial</p>
+        <p><strong>Email:</strong> Dco@example.com</p>
+        <p><strong>WhatsApp:</strong> +62 812-3456-7890</p>
+        <p><strong>Instagram:</strong> @dco.delcorner</p>
+      </div>
+
+      <!-- Map Embed -->
+      <div class="w-full h-96 rounded-xl overflow-hidden shadow-lg">
+        <iframe
+          class="w-full h-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63715.1234567!2d99.144!3d2.383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sInstitut%20Teknologi%20Del!5e0!3m2!1sid!2sid!4v1634567890"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+      <div
+        class="container mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left"
+      >
+        <div>
+          <h4 class="font-bold text-lg text-white mb-2">D.co</h4>
+          <p>Kafe Mahasiswa DEL untuk belajar, diskusi, dan santai.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg text-white mb-2">Jam Operasional</h4>
+          <p>Senin - Sabtu: 09.00 - 21.00</p>
+          <p>Selasa & Minggu: Tutup</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg text-white mb-2">Kontak</h4>
+          <p>WhatsApp: +62 812-3456-7890</p>
+          <p>Email: D.co@example.com</p>
+        </div>
+      </div>
+      <div class="text-center text-gray-500 mt-6">© 2025 D.co - Del Corner</div>
+    </footer>
+  </body>
+</html>
